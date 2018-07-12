@@ -6,7 +6,7 @@ import Paper from 'material-ui/Paper';
 import MdIconBattery from 'material-ui/svg-icons/device/battery-30';
 import MdIconSnooze from 'material-ui/svg-icons/av/snooze';
 import Subheader from 'material-ui/Subheader'
-import fig1 from './assets/fig1.png';
+import fig2 from './assets/fig2.png';
 import echarts from 'echarts/lib/echarts';
 // 引入柱状图
 import  'echarts/lib/chart/bar';
@@ -125,7 +125,7 @@ class Home extends React.Component {
 
 				<div style={{marginTop: 60}}>
 					<h2>Exercise Calendar</h2>
-					<img src={fig1} alt='fig1' />
+					<img src={fig2} alt='fig2' />
 				</div>
 			</div>
 		);
