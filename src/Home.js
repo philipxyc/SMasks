@@ -1,8 +1,8 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
-import MdIconDoneAll from 'material-ui/svg-icons/action/done-all';
-import MdIconCenterFocusWeak from 'material-ui/svg-icons/image/center-focus-weak';
-import MdIconEqualizer from 'material-ui/svg-icons/av/equalizer';
+// import MdIconDoneAll from 'material-ui/svg-icons/action/done-all';
+// import MdIconCenterFocusWeak from 'material-ui/svg-icons/image/center-focus-weak';
+// import MdIconEqualizer from 'material-ui/svg-icons/av/equalizer';
 import MdIconBattery from 'material-ui/svg-icons/device/battery-30';
 import MdIconSnooze from 'material-ui/svg-icons/av/snooze';
 import Subheader from 'material-ui/Subheader'
