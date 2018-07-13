@@ -11,7 +11,7 @@ import MdIconFlashOn from 'material-ui/svg-icons/image/flash-on';
 import MdIconAllOut from 'material-ui/svg-icons/action/all-out';
 import MdIconHistory from 'material-ui/svg-icons/action/history';
 import MdIconChangeHistory from 'material-ui/svg-icons/action/change-history';
-import yuehaoavatar from './assets/avatar.png';
+import yuehaoavatar from './assets/avatar.jpg';
 
 
 class UserProfile extends React.Component {
