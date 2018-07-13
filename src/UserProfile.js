@@ -19,8 +19,8 @@ class UserProfile extends React.Component {
 		return (
 			<Card>
 				<CardHeader
-					title='王小明'
-					subtitle='学渣一枚，大神们多多关照'
+					title='Xiao Ming'
+					subtitle='Better air quality, better life!'
 					avatar={yuehaoavatar}
 				/>
 				<CardMedia>
@@ -30,15 +30,8 @@ class UserProfile extends React.Component {
 							<ListItem
 								key={0}
 								insetChildren={true}
-								primaryText='16岁 高中二年级'
+								primaryText='December 6th'
 								leftIcon={<MdIconCake />}
-							/>
-							<Divider />
-							<ListItem
-								key={1}
-								insetChildren={true}
-								primaryText='上海中学'
-								leftIcon={<MdIconSchool />}
 							/>
 							<Divider />
 							<ListItem
@@ -46,41 +39,36 @@ class UserProfile extends React.Component {
 								insetChildren={true}
 								primaryText={
 									<div style={{display: 'flex', flexWrap: 'wrap'}}>
-										<Chip style={{marginRight: 7}}>数学</Chip>
-										<Chip style={{marginRight: 7}}>物理</Chip>
+										<Chip style={{marginRight: 7}}>Travelling</Chip>
+										<Chip style={{marginRight: 7}}>Cycling</Chip>
 									</div>
 								}
 								leftIcon={<MdIconStars />}
 							/>
 							<Divider />
 							<ListItem
-								key={3}
-								insetChildren={true}
-								primaryText='全国综合排名 1024'
-								leftIcon={<MdIconFlashOn />}
-							/>
-							<Divider />
-							<ListItem
 								key={4}
 								insetChildren={true}
-								primaryText='正确率 64%'
+								primaryText='Total exercising time: 53hr'
 								leftIcon={<MdIconAllOut />}
 							/>
 							<Divider />
 							<ListItem
 								key={5}
 								insetChildren={true}
-								primaryText='挑战记录'
+								primaryText='History'
 								leftIcon={<MdIconHistory />}
 								nestedItems={[
 									<ListItem
 										key={0}
-										primaryText='1v1单挑赛 获胜'
+										primaryText='Cycling'
+										secondaryText = 'Time: July 12th'
 										leftIcon={<MdIconChangeHistory />}
 									/>,
 									<ListItem
 										key={1}
-										primaryText='完成复习题'
+										primaryText='Jogging'
+										secondaryText = 'Time: July 10th'
 										leftIcon={<MdIconChangeHistory />}
 									/>
 								]}
@@ -90,7 +78,7 @@ class UserProfile extends React.Component {
 					</div>
 				</CardMedia>
 				<CardActions>
-					<FlatButton label='更改信息' />
+					<FlatButton label='Modify Information' />
 				</CardActions>
 			</Card>
 		);

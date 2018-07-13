@@ -2,10 +2,10 @@ import React from 'react';
 import {List, ListItem} from 'material-ui/List';
 import MdIconStarBorder from 'material-ui/svg-icons/toggle/star-border';
 import MdIconStar from 'material-ui/svg-icons/toggle/star';
-import MdIconSupervisorAccount from 'material-ui/svg-icons/action/supervisor-account';
-import MdIconBook from 'material-ui/svg-icons/action/book';
-import MdIconBookMark from 'material-ui/svg-icons/action/bookmark';
-import MdIconPermIdentity from 'material-ui/svg-icons/action/perm-identity';
+import MdIconNaturePeople from 'material-ui/svg-icons/image/nature-people';
+import MdIconMoto from 'material-ui/svg-icons/action/motorcycle';
+import MdIconDirectRun from 'material-ui/svg-icons/maps/directions-run';
+import MdIconDirectWalk from 'material-ui/svg-icons/maps/directions-walk';
 import {yellow500} from 'material-ui/styles/colors';
 
 
@@ -18,24 +18,24 @@ class ProblemListView extends React.Component {
 			let primaryText, secondaryText, leftIcon, rightAvatar;
 
 			if (item.type === 0) {
-				primaryText = '打卡题';
-				secondaryText = item.subtitle;
-				leftIcon = <MdIconBook />;
-				rightAvatar = <div><MdIconStar  color={yellow500}/><MdIconStarBorder /><MdIconStarBorder /></div>;
+				primaryText = 'Cycling';
+				secondaryText = 'Place: Century Park';
+				leftIcon = <MdIconMoto />;
+				rightAvatar = <div><MdIconStar  color={yellow500}/><MdIconStarBorder color={yellow500}/><MdIconStarBorder /></div>;
 			} else if (item.type === 1) {
-				primaryText = '复习题';
-				secondaryText = item.subtitle;
-				leftIcon = <MdIconBookMark />;
+				primaryText = 'Marathon';
+				secondaryText = 'Place: People Square';
+				leftIcon = <MdIconDirectRun />;
 				rightAvatar = <div><MdIconStar  color={yellow500}/><MdIconStarBorder /><MdIconStarBorder /></div>;				
 			} else if (item.type === 2) {
-				primaryText = '5v5 团队赛';
-				secondaryText = item.subtitle;
-				leftIcon = <MdIconSupervisorAccount />;
+				primaryText = 'Hiking';
+				secondaryText = 'Place: Putuo Mountain';
+				leftIcon = <MdIconNaturePeople />;
 				rightAvatar = <div></div>;
 			} else if (item.type === 3) {
-				primaryText = '1v1 单挑赛';
-				secondaryText = item.subtitle;
-				leftIcon = <MdIconPermIdentity />;
+				primaryText = 'Jogging together!';
+				secondaryText = 'Place: Shanghaitech Campus';
+				leftIcon = <MdIconDirectWalk />;
 				rightAvatar = <div></div>;
 			} else {
 				return;
@@ -49,9 +49,7 @@ class ProblemListView extends React.Component {
 						secondaryText = {secondaryText}
 						leftIcon = {leftIcon}
 						rightAvatar = {rightAvatar}
-						onClick = {() => {
-							this.props.mainApp.selectQuestion(item);
-						}}
+						
 					/>
 				));
 			}

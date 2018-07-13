@@ -11,7 +11,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<AppBar
-				title='ShangHealth'
+				title='Pure'
 				iconElementLeft={
 					<IconMenu
 						iconButtonElement={
@@ -20,9 +20,9 @@ class Header extends React.Component {
 						targetOrigin={{horizontal: 'right', vertical: 'top'}}
 						anchorOrigin={{horizontal: 'right', vertical: 'top'}}
 					>
-						<MenuItem primaryText='设置' />
-						<MenuItem primaryText='关于' />
-						<MenuItem primaryText='常见问题' />
+						<MenuItem primaryText='Setting' />
+						<MenuItem primaryText='About' />
+						<MenuItem primaryText='Common problem' />
 					</IconMenu>
 
 				}
@@ -34,8 +34,8 @@ class Header extends React.Component {
 						targetOrigin={{horizontal: 'right', vertical: 'top'}}
 						anchorOrigin={{horizontal: 'right', vertical: 'top'}}
 					>
-						<MenuItem primaryText='私信' />
-						<MenuItem onClick={() => this.props.mainApp.selectNotificationList()} primaryText='通知' />
+						<MenuItem primaryText='Inbox' />
+						<MenuItem primaryText='Notifications' />
 					</IconMenu>
 				}
 			/>

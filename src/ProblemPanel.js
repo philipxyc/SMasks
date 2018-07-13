@@ -13,7 +13,7 @@ class ProblemPanel extends React.Component {
 		return (
 			<Tabs initialSelectedIndex={this.props.mainApp.state.contentParams.selectedIndex}>
 				<Tab
-					label='课内'
+					label='Local Sport Event'
 					onActive={() => {this.select(0)}}
 				>
 					<ProblemListView
@@ -21,15 +21,7 @@ class ProblemPanel extends React.Component {
 						mainApp={this.props.mainApp}
 					/>
 				</Tab>
-				<Tab
-					label='课外'
-					onActive={() => {this.select(1)}}
-				>
-					<ProblemListView
-						problemList={ProblemData['outclass']}
-						mainApp={this.props.mainApp}
-					/>
-				</Tab>
+
 			</Tabs>
 		);
 	}
